@@ -1,0 +1,206 @@
+body {
+  background-color: rgb(49, 49, 49);
+  margin: 0;
+}
+
+.mainOverview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+}
+
+.titlesContainer {
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.45);
+  background-color: rgb(25, 25, 25);
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titlesContainer h1 {
+  color: brown;
+  font-family: "Press Start 2P", cursive;
+  font-size: 60px;
+  text-align: center;
+}
+
+.frontView {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.teamGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.subTitleContainer {
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.45);
+  background-color: rgb(25, 25, 25);
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subTitleContainer h1 {
+  color: brown;
+  font-family: "Press Start 2P", cursive;
+  font-size: 60px;
+  text-align: center;
+}
+
+.mainGifContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.logoDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.logoCube {
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 47px;
+  width: 900px;
+  height: 600px;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg) rotateY(135deg);
+  padding-bottom: 100px;
+}
+
+.cubeShadow {
+  background-color: rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.45);
+  height: 390px;
+  width: 390px;
+  transform: rotateX(-100deg) rotateZ(45deg);
+  position: absolute;
+  margin-top: 500px;
+}
+
+.backSquare,
+.frontSquare,
+.leftSquare,
+.rightSquare,
+.bottomSquare {
+  border: 1px solid;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  opacity: 86%;
+}
+
+.topSquare {
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  opacity: 86%;
+  transform: translateY(-50%) rotateX(90deg);
+}
+
+.bottomSquare {
+  transform: translateY(50%) rotateX(90deg);
+}
+
+.backSquare {
+  transform: translateZ(-200px) rotateY(180deg);
+}
+
+.frontSquare {
+  transform: translateZ(200px);
+}
+
+.leftSquare {
+  transform: translateX(-200px) rotateY(-90deg);
+}
+
+.rightSquare {
+  transform: translateX(200px) rotateY(90deg);
+}
+
+@keyframes loop {
+  from {
+    transform: rotateX(-10deg) rotateY(360deg);
+  }
+  to {
+    transform: rotateX(-10deg) rotateY(0deg);
+  }
+}
+
+@keyframes shadow-rotating {
+  from {
+    transform: rotateX(-100deg) rotateZ(360deg);
+  }
+  to {
+    transform: rotateX(-100deg) rotateZ(0deg);
+  }
+}
+
+.cube {
+  animation: loop 10s linear infinite;
+}
+
+.cubeShadow {
+  animation: shadow-rotating 10s linear infinite;
+}
+
+.gallery {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.7);
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  border: 2px solid red;
+}
+
+.Gallery-Container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+}
+.galleryItem {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  align-self: center;
+}
