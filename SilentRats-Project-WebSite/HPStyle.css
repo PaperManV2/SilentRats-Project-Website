@@ -204,3 +204,23 @@ body {
   background-size: cover;
   align-self: center;
 }
+
+.menu {
+  background-color: white;
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  z-index: 100;
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuItems {
+}
+
+.menuButton {
+  width: 200px;
+  height: 50px;
+}
