@@ -1,0 +1,111 @@
+#entrySection {
+  display: flex;
+  gap: 50px;
+}
+
+#galleryContainer {
+  width: 940px;
+  height: 550px;
+  background-color: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  border: #641a1a 5px solid;
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.7);
+}
+
+.bigLogo {
+  user-select: none;
+}
+
+.mainSliderBtn {
+  fill: black;
+  transition: 0.25s;
+  cursor: pointer;
+  position: absolute;
+  stroke-width: 0;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.mainSliderBtn:hover {
+  fill: #641a1a;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev {
+  left: 20px;
+}
+
+.sliderList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.sliderImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 0.5s, opacity 0s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.sliderImage:nth-child(1) {
+  background-image: url("../images/zdj-robocze/group/318530845_677444407265073_7072664149913333191_n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sliderImage:nth-child(2) {
+  background-image: url("../images/zdj-robocze/group/CicheSzczuryTeamPicture1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sliderImage:nth-child(3) {
+  background-image: url("../images/zdj-robocze/group/318057569_547778546858631_5209105303814556579_n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sliderImage:nth-child(4) {
+  background-image: url("../images/zdj-robocze/group/318180648_1187394652158915_1334402040615207226_n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sliderImage:nth-child(5) {
+  background-image: url("../images/zdj-robocze/group/318190119_445574227597293_2594778384652865965_n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sliderImage:nth-child(6) {
+  background-image: url("../images/zdj-robocze/group/318304358_553997852815053_6853501678273662158_n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sliderImage:nth-child(7) {
+  background-image: url("../images/zdj-robocze/group/318352010_845101306769872_6114610445908034912_n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sliderImage:nth-child(8) {
+  background-image: url("../images/zdj-robocze/group//318505023_507360924792096_3676164786558721370_n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sliderImage:nth-child(9) {
+  background-image: url("../images/zdj-robocze/group/318024405_831158567995780_4053171105286559003_n.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

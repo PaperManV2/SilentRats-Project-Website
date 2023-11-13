@@ -1,0 +1,48 @@
+.aboutUs_container {
+  padding: 20px 0 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("../images/zdj-robocze/background/3d-rendering-futuristic-background-with-geometric-shapes-colorful-neon-lights.jpg");
+  box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.7);
+  gap: 60px;
+}
+
+.aboutUs_info {
+  padding: 10px;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "Cabin", Times, serif;
+  line-height: 30px;
+  width: 100%;
+  max-width: 1200px;
+  color: #979797;
+  background: linear-gradient(#641a1a, #c73838);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+
+.aboutUs_info:hover {
+  transform: scale(1.03);
+}
+
+.aboutUs_stairNote {
+  width: 600px;
+  height: 400px;
+  user-select: 0;
+  background-color: #757575;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}

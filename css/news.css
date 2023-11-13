@@ -1,0 +1,76 @@
+#quickNews {
+  height: 250px;
+  background-color: #383838;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1829px;
+  width: calc(100% - 40px);
+  justify-content: center;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.45);
+}
+
+.news {
+  width: 350px;
+  height: 100%;
+  background-color: #4b4b4b;
+  position: relative;
+  overflow: hidden;
+}
+
+.news::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.news:hover::before {
+  transform: scale(1.3);
+  filter: brightness(0.5);
+}
+
+.news-content {
+  font-family: "Cabin", sans-serif;
+  font-weight: 300;
+  color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 19px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+  user-select: none;
+  text-align: right;
+}
+
+.news:hover .news-content {
+  opacity: 1;
+}
+
+.news:nth-child(1)::before {
+  background-image: url("../images/zdj-robocze/news/tranquility-further-showcased-scenic-mountain-landscapes-generative-ai.jpg");
+}
+
+.news:nth-child(2)::before {
+  background-image: url("../images/zdj-robocze/news/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai.jpg");
+}
+
+.news:nth-child(3)::before {
+  background-image: url("../images/zdj-robocze/news/abstract-multi-colored-wave-pattern-shiny-flowing-modern-generated-by-ai.jpg");
+}
+
+.news:nth-child(4)::before {
+  background-image: url("../images/zdj-robocze/news/screen-with-graph-it-that-says-word-financial-it.jpg");
+}
+
+.news:nth-child(5)::before {
+  background-image: url("../images/zdj-robocze/news/glowing-satellite-orbits-planet-star-filled-galaxy-generated-by-ai.jpg");
+}
